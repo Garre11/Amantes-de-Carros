@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carros - História e Tecnologia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #202020;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #f4f4f4;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease, background-position 0.3s ease;
+            background: linear-gradient(to right, red, yellow);
+            background-size: 200% 100%;
+            background-position: left bottom;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 10px;
+            font-size: larger;
+            margin: 50px auto;
+        }
+
+        .destaque {
+            font-weight: bold;
+            color: #d10000;
+        }
+
+        .maiuscula {
+            text-transform: uppercase;
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+        .alinhado-esquerda {
+            text-align: left;
+        }
+
+        .alinhado-centro {
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: #ccc;
+            }
+
+            50% {
+                background-color: #ddd;
+            }
+
+            100% {
+                background-color: #ccc;
+            }
+        }
+
+        footer {
+            background-color: #202020;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Conheça a Evolução dos Carros</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="form.html">Contato</a></li>
+        </ul>
+    </nav>
+    <section style="width: 1100px;">
+        <p class="alinhado-esquerda">Carros esportivos sempre capturaram a imaginação de entusiastas e sonhadores,
+            incorporando uma combinação de desempenho estonteante, design inovador e engenharia avançada. Esses
+            veículos, projetados para excelência em velocidade e manobrabilidade, são o epítome do luxo e da performance
+            automotiva. Com chassis aerodinâmicos e motores poderosos, os carros esportivos oferecem uma experiência de
+            condução que é ao mesmo tempo visceral e exilarante.</p>
+        <p class="alinhado-esquerda">Historicamente, carros esportivos surgiram como uma expressão do desejo de
+            velocidade
+            e competição. Desde os primeiros modelos da Ferrari e Lamborghini na Itália até os poderosos Chevrolet e
+            Ford nos Estados Unidos, esses carros têm sido associados à sofisticação e ao prestígio. Muitos desses
+            modelos são equipados com motores V8 ou até V12, que proporcionam uma aceleração impressionante e uma
+            velocidade máxima que desafia os limites da física automotiva.</p>
+        <p class="alinhado-esquerda">Além do desempenho, o design dos carros esportivos é frequentemente revolucionário,
+            apresentando linhas agressivas e silhuetas baixas que não apenas reduzem o arrasto aerodinâmico, mas também
+            capturam olhares por onde passam. O interior desses veículos é igualmente impressionante, com acabamentos em
+            materiais de alta qualidade, como couro e fibra de carbono, e tecnologias de ponta para conforto e
+            entretenimento.</p>
+        <p class="alinhado-esquerda">A segurança também é uma prioridade nos carros esportivos modernos, com sistemas
+            avançados de assistência ao motorista, como controle de estabilidade e frenagem automática de emergência.
+            Esses sistemas ajudam a manter o controle do veículo em altas velocidades e em condições de condução
+            desafiadoras.</p>
+        <p class="alinhado-esquerda">Contudo, os carros esportivos não são apenas sobre velocidade e estética; eles
+            também
+            são um símbolo de inovação tecnológica. Muitos fabricantes utilizam seus modelos esportivos como
+            laboratórios para novas tecnologias que eventualmente se infiltram em modelos mais acessíveis. Isso inclui
+            melhorias em eficiência de combustível, sistemas híbridos e até desenvolvimento de veículos elétricos
+            esportivos.</p>
+        <p class="alinhado-esquerda">No entanto, os desafios ambientais atuais têm pressionado os fabricantes de carros
+            esportivos a reconsiderar o uso de grandes motores a combustão.</p>
+    </section>
+    <footer>
+        <p>© 2024 Amantes de Carros</p>
+    </footer>
+</body>
+
+</html>
